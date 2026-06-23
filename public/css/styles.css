@@ -1,105 +1,114 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-
-.encabezado {
-    background-color: #673ab7;
-    color: white;
-    text-align: center;
-    padding: 40px 20px; 
-    margin-bottom: 30px;
-}
-
-.titulo-principal {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.titulo-seccion {
-    color: #673ab7;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #d1c4e9;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-.contenedor {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 
     display: flex;
-    gap: 30px;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
-.texto-sinopsis {
-    flex: 1;
-}
-
-.imagen-portada {
-    max-width: 400px;
+form {
+    background: white;
     width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border: 8px solid rgb(120, 118, 66);
+    max-width: 420px;
+
+    padding: 2rem;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
-.caja-info {
-    background-color: #e8eaf6;
-    border: 2px dashed #9fa8da;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 8px;
+form > div {
+    margin-bottom: 1.25rem;
 }
 
-.grilla-personajes {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+label {
+    display: block;
+    margin-bottom: .5rem;
+
+    color: #333;
+    font-size: .95rem;
+    font-weight: 600;
 }
 
-.tarjeta {
-    background-color: white;
+input {
+    width: 100%;
+
+    padding: .9rem 1rem;
+
     border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 12px;
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 10px;
+
+    font-size: .95rem;
+
+    outline: none;
+    transition: .2s;
 }
 
-.imagen-personaje {
-    border-radius: 50%;
-    border: 4px solid #673ab7;
+input:focus {
+    border-color: #4f46e5;
 }
 
-.nombre-personaje {
-    color: #311b92;
-    margin-bottom: 10px;
+.valid {
+    border: 2px solid #16a34a;
 }
 
-.pie-pagina {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #333;
+.invalid {
+    border: 2px solid #dc2626;
+}
+
+.error-message,
+.success-message {
+    display: block;
+    margin-top: .4rem;
+    font-size: .85rem;
+}
+
+.error-message {
+    color: #dc2626;
+}
+
+.success-message {
+    color: #16a34a;
+}
+
+button {
+    width: 100%;
+
+    padding: 1rem;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #4f46e5;
     color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s;
 }
 
-img {
-    max-width: 60%;
-    height: auto;
+button:hover:not(:disabled) {
+    background: #4338ca;
+}
+
+button:disabled {
+    background: #c7c7c7;
+    cursor: not-allowed;
+}
+
+#successMessage {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
 }

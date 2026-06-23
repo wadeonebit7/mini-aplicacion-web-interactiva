@@ -4,14 +4,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario de Registro</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/css/styles-movie.css">
     </head>
     <body>
-        <form action="/register" method="POST">
-            <button type="submit">Registrase</button>
-        </form>
-        <form action="/login" method="POST">
-            <button type="submit">Iniciar Session</button>
+        <header>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <a>
+                            <form action="/register" method="POST">
+                                <button type="submit">Registrase</button>
+                            </form>
+                            
+                        </a>
+                        <a>
+                            <form action="/login" method="POST">
+                                <button type="submit">Iniciar Session</button>
+                            </form>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="media_container">
+            <article class="pelicula-card">
+                <h2>EDGE OF TOMORROW</h2>
+                <div class="media-content">
+                    <img src="img/edge_of_tomorrow.jpg" alt="Edge Of Tomorrow">
+                    <video controls>
+                        <source src="media/edge_of_tomorrow.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+            
+            <article class="pelicula-card">
+                <h2>PASAJEROS</h2>
+                <div class="media-content">
+                    <img src="img/pasajeros.jpg" alt="Pasajeros">
+                    <video controls>
+                        <source src="media/pasajeros.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+
+            <article class="pelicula-card">
+                <h2>LA GUERRA DEL MAÑANA</h2>
+                <div class="media-content">
+                    <img src="img/la_guerra_del_mañana.jpg" alt="La Guerra del Mañana">
+                    
+                    <video controls>
+                        <source src="media/la_guerra_del_mañana.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </article>
+        </div>
+        
+        <form class="formulario-contacto" action="agradecimiento.html" method="get">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Ej: NekoCaos99" required>
+            
+            <label for="correo">Correo electronico: </label>
+            <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+            
+            <label for="titulo">Titulo: </label>
+            <input type="text" id="titulo" name="titulo" placeholder="¿De qué trata?">
+            
+            <label for="Contenido">Contenido: </label>
+            <textarea id="contenido" name="contenido" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
         </form>
     </body>
 </html>
