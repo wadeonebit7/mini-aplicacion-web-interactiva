@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+.media_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 24px;
+}
+
+.pelicula-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    width: min(320px, 100%);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pelicula-card h2 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+}
+
+.media-content {
+    display: grid;
+    gap: 12px;
+}
+
+.pelicula-card img,
+.pelicula-card video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 24px auto;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto button,
+form button {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.formulario-contacto button,
+form button {
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover,
+form button:hover {
+    background: #000;
+}
